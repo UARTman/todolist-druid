@@ -55,6 +55,9 @@ struct AppData {
 
 impl AppData {
     fn add_todo(&mut self) {
+        if self.added_text.is_empty() {
+            return;
+        }
         self.list.push_back(TodoItem {
             currently_edited: false,
             done: false,
