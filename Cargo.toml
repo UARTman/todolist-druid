@@ -1,0 +1,11 @@
+[package]
+name = "druid-todolist"
+version = "0.1.0"
+authors = ["Anton Gusev <uartman@mail.ru>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+druid = {version="0.7.0", features=["im"]}
+uuid = { version = "0.4", features = ["v4"] }
